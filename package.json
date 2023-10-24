@@ -10,8 +10,10 @@
   "dependencies": {
     "@azure/identity": "^3.3.2",
     "@azure/storage-blob": "^12.16.0",
+    "@prisma/client": "^5.4.2",
     "dotenv": "^16.3.1",
     "express": "^4.16.1",
+    "prisma": "^5.4.2",
     "uuid": "^9.0.1"
   }
 }
