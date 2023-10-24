@@ -4,6 +4,7 @@ Azureのローカル環境構築テンプレート
 # 構成
 
 - nodejs
+- MySQL(8.0)
 - Azurite（Azure Storageのエミュレーター）
 
 # Azuriteのインストール Docker環境
