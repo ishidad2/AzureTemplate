@@ -3,7 +3,7 @@ Azureのローカル環境構築テンプレート
 
 # 構成
 
-- nodejs
+- Express(nodejs)
 - MySQL(8.0)
 - Azurite（Azure Storageのエミュレーター）
 
