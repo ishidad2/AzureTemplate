@@ -46,6 +46,14 @@ docker compose exec node bash
 npm install
 ```
 
+.envの作成
+
+ローカル接続文字列はそのままでOK
+
+```
+cp .env.sample .env
+```
+
 ```
 cd src
 node index.js
