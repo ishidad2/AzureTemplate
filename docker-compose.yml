@@ -14,8 +14,6 @@ services:
       nodemon src/server.js"
     depends_on:
       - db
-      - storage
-      - mail
   storage:
     image: mcr.microsoft.com/azure-storage/azurite
     ports:
