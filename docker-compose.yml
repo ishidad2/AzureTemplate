@@ -14,6 +14,8 @@ services:
       nodemon src/server.js"
     depends_on:
       - db
+      - storage
+      - mail
   storage:
     image: mcr.microsoft.com/azure-storage/azurite
     ports:
@@ -31,6 +33,17 @@ services:
       - MYSQL_DATABASE=develop
       - MYSQL_ROOT_PASSWORD=pass
       - TZ=Asia/Tokyo
+  mail:
+    image: mailhog/mailhog
+    container_name: mailhog
+    ports:
+      - "8025:8025"
+    environment:
+      MH_STORAGE: maildir
+      MH_MAILDIR_PATH: /tmp
+    volumes:
+      - maildir:/tmp
 
 volumes:
   db-store:
+  maildir: {}

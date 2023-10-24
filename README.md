@@ -113,3 +113,12 @@ found 0 vulnerabilities
 
 ![](./images/image-006.png)
 
+# Mailhog
+
+以下へアクセスして、Mailhog 画面が見られることを確認する
+
+```
+http://localhost:8025/
+```
+
+![](./images/image-007.png)
